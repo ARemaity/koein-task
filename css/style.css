@@ -269,7 +269,7 @@ a {
     display: none;
 }
 
-@media (max-width:410px) {
+@media (max-width:424px) {
     .home-banner {
         height: 804px;
         background-size: 861px 811px;
@@ -504,7 +504,7 @@ a {
     display: none;
 }
 
-@media (max-width:410px) {
+@media (max-width:424px) {
 
     .dark-div {
         height: 677px !important;
@@ -746,7 +746,7 @@ a {
 
 }
 
-@media (max-width:410px) {
+@media (max-width:424px) {
 
 
 
@@ -916,7 +916,7 @@ a {
 }
 
 
-@media (max-width:410px) {
+@media (max-width:424px) {
 
     .gallery {
 
@@ -1166,7 +1166,7 @@ div.links:nth-child(3)>ul:nth-child(1) {
 
 }
 
-@media (max-width: 410px) {
+@media (max-width: 424px) {
 
 
     .first-head {
@@ -1458,7 +1458,7 @@ div.links:nth-child(3)>ul:nth-child(1) {
     }
 }
 
-@media (max-width: 410px) {
+@media (max-width: 424px) {
 
 
 
@@ -1554,7 +1554,7 @@ div.links:nth-child(3)>ul:nth-child(1) {
     row-gap: 85px;
 }
 
-@media (max-width:410px) {
+@media (max-width:424px) {
 
 
 
@@ -1645,7 +1645,7 @@ div.links:nth-child(3)>ul:nth-child(1) {
 
 }
 
-@media (max-width:410px) {
+@media (max-width:424px) {
 
     .items .price {
 
@@ -1804,7 +1804,7 @@ div.links:nth-child(3)>ul:nth-child(1) {
     cursor: pointer;
 }
 
-@media (max-width: 410px) {
+@media (max-width: 424px) {
     .filter {
         display: inline !important;
         position: fixed !important;
@@ -2199,7 +2199,7 @@ div.link-item-desc:nth-child(3) {
 
 
 
-@media (max-width:410px) {
+@media (max-width:424px) {
     .single-container .main-nav {
         padding: 12px 16px;
         background-color: black;
@@ -2550,7 +2550,7 @@ div.link-item-desc:nth-child(3) {
 
 }
 
-@media (max-width:410px) {
+@media (max-width:424px) {
     .cart-modal {
         top: 0px !important;
         left: 0px !important;
@@ -2898,7 +2898,7 @@ div.link-item-desc:nth-child(3) {
     opacity: 1;
 }
 
-@media (max-width:410px) {
+@media (max-width:424px) {
     .single-container .btn-profile {
         display: block !important;
         margin-left: 17px;
