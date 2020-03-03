@@ -7,7 +7,7 @@ $(document).ready(function() {
     let diff = width_screen - 1400;
     if (diff > 0) {
       let red_wine = -242.717 + diff;
-      let cart_modal = 912 + diff;
+      let cart_modal =880 + diff;
       $(".red-wine-bg").css("left", red_wine);
       $(".cart-modal").css("left", cart_modal);
     }
