@@ -1,0 +1,3061 @@
+/*//// font links */
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Vidaloka&display=swap');
+
+@font-face {
+    font-family: Exodus Demo;
+    src: url("/font/ExodusDemo-Sharpen.otf");
+}
+
+@font-face {
+    font-family: Exodus Personal Use;
+    src: url("/font/Exodus-PersonalUse-Regular.otf");
+}
+
+/*//// reset css template  */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+:root {
+
+    --backgrond-color: #FFF;
+    --primary-color: #4B4035;
+    --secondary-color: #B2936D;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--second-color);
+    color: var(--font-color);
+
+    font-size: 15px;
+    line-height: 1.5;
+
+}
+
+a {
+
+    color: #262626;
+    text-decoration: none;
+    /* text-decoration-color:  is for remove blue color of the links  */
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    overflow: hidden;
+    margin: 0 auto;
+
+}
+
+/* //////////////////////////////Home page/////////////////////////// */
+
+.home-banner {
+
+    width: 100%;
+    height: 738px;
+    position: relative;
+
+    background-image: url('/img/Image-55.png');
+    z-index: 0;
+}
+
+.home-banner .main-nav {
+    padding: 14px 56px;
+    z-index: 2;
+    margin: 0px;
+}
+
+
+
+.home-banner .show-menu {
+    color: #ffffff;
+}
+
+.home-banner .cart p {
+    color: #ffffff;
+}
+
+.home-banner .btn-search,
+.home-banner .btn-profile,
+.home-banner .btn-lang {
+    color: #ffffff;
+}
+
+.home-banner .right-geo {
+    position: absolute;
+    left: 983px;
+    top: 151px;
+    width: 467px;
+    height: 587px;
+    transform: matrix(-1, 0, 0, -1, 0, 0);
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+    background: transparent linear-gradient(196deg, #000000 0%, #00000000 100%) 0% 0% no-repeat padding-box;
+    opacity: 0.59;
+}
+
+.home-banner .left-geo {
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 611px;
+    height: 738px;
+    clip-path: polygon(0px 0px, 34.25% 0px, 100% 100%, 0% 100%);
+
+    background: transparent linear-gradient(180deg, #000000 0%, #00000000 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.banner-title {
+    position: absolute;
+    top: 392px;
+    margin-left: 64px;
+}
+
+.banner-title p {
+
+    max-width: 687px;
+    height: 201px;
+    text-align: left;
+    font: normal 50px/67px Vidaloka;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    text-shadow: 0px 3px 6px #0000006B;
+    opacity: 1;
+
+}
+
+
+.banner-btn {
+    margin-top: 22.68px;
+
+    max-width: 283px;
+    height: 58px;
+    border: 1px solid #FBFBFB;
+    opacity: 1;
+}
+
+.banner-btn p {
+    display: none;
+}
+
+@media (max-width:410px) {
+    .home-banner {
+        height: 804px;
+        background-size: 861px 811px;
+    }
+
+    .home-banner .main-nav {
+        padding: 12px 16px;
+        padding-right: 19px;
+        border: none;
+    }
+
+    .home-banner .left-geo {
+
+        clip-path: polygon(0px 0px, 43.76% 0px, 100% 100%, 0% 100%);
+
+        width: 233px;
+        height: 139px;
+    }
+
+    .home-banner .right-geo {
+        top: 575px;
+        left: 204px;
+        width: 183px;
+        height: 229px;
+        transform: matrix(-1, 0, 0, -1, 0, 0);
+        background: transparent linear-gradient(196deg, #000000 0%, #00000000 100%) 0% 0% no-repeat padding-box;
+        opacity: 0.59;
+    }
+
+    .banner-title {
+        position: absolute;
+        top: 516px;
+        margin-left: 20px;
+    }
+
+    .banner-title p {
+        display: block;
+        max-width: 259px;
+        height: 108px;
+        text-align: left;
+        font: normal 20px/27px Vidaloka;
+        letter-spacing: 0;
+        color: #FFFFFF;
+        text-shadow: 0px 3px 6px #0000006B;
+        opacity: 1;
+
+    }
+
+
+    .banner-btn {
+        margin-top: 22.68px;
+        text-align: center;
+        max-width: 283px;
+        height: 58px;
+        border: 1px solid #FBFBFB;
+        opacity: 1;
+
+    }
+
+    .banner-btn p {
+        font: Bold 11px/15px Raleway;
+        letter-spacing: 1.42px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        opacity: 1;
+        height: 15px;
+        width: 185px;
+        margin: 0 auto;
+        line-height: 52px;
+    }
+
+}
+
+.dark-div {
+
+
+    padding-top: 265px;
+    width: 100%;
+    height: 1603px;
+    background: #24292F 0% 0% no-repeat padding-box;
+    opacity: 1;
+    overflow: hidden !important;
+    position: relative;
+
+}
+
+.dark-div .background-logo {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 1003;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 664px;
+    height: 655px;
+    background: transparent url('/img/LOGO-MV whiye.fw.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.home-slider {
+
+    z-index: 4;
+    margin: 0 auto;
+    height: 677px;
+    width: 1150px;
+}
+
+.home-slider img {
+    float: left;
+    width: 351px;
+    height: 677px;
+    padding-top: 85px;
+}
+
+.name-slider {
+    margin-top: 360px;
+    float: left;
+    width: 404px;
+    display: block;
+}
+
+.name-slider .white-title {
+    width: 404px;
+    height: 48px;
+    text-align: center;
+    font: normal 36px/48px Vidaloka;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.name-slider .brown-title {
+
+
+    text-align: center;
+    font: normal 36px/48px Vidaloka;
+    letter-spacing: 0;
+    color: #B2936D;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.name-slider .arrow-slider {
+    text-align: center;
+    margin-top: 126px;
+}
+
+.pre-slider {
+    margin-left: 10px;
+}
+
+.next-slider {
+    margin-right: 10px;
+}
+
+.arrow-slider svg {
+    cursor: pointer;
+    color: #ffffff;
+
+
+}
+
+
+.details-slider {
+    margin-top: 360px;
+    float: left;
+    width: 225px;
+    height: 100%;
+    text-align: left;
+}
+
+.details-slider .year {
+    width: 93px;
+    height: 39px;
+    background: #B2936D 0% 0% no-repeat padding-box;
+    opacity: 1;
+    text-align: center;
+    font: normal 31px/41px Raleway;
+    letter-spacing: 0;
+    color: #FFFFFF;
+}
+
+.details-slider .place {
+
+    text-align: left;
+    font: normal 25px/33px Vidaloka;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.details-slider .type {
+
+    text-align: left;
+    font: normal 20px/27px Raleway;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.details-slider .price {
+    margin-top: 33px;
+    text-align: left;
+    font: normal 25px/33px Vidaloka;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.details-slider .order-btn {
+    cursor: pointer;
+    text-align: center;
+    margin-top: 66px;
+    width: 222px;
+    height: 59px;
+    border: 1px solid #B2936D;
+    opacity: 1;
+    color: #B2936D;
+    font: Bold 14px/19px Raleway;
+    letter-spacing: 1.81px;
+    line-height: 57px;
+    text-transform: uppercase;
+
+}
+
+.details-slider .arrow-slider {
+    display: none;
+}
+
+@media (max-width:410px) {
+
+    .dark-div {
+        height: 677px !important;
+        padding-top: 34px;
+    }
+
+    .dark-div .background-logo {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        background-size: 220px 217px;
+        top: 133px;
+        width: 220px;
+        height: 217px;
+
+    }
+
+    .home-slider {
+        text-align: center;
+        margin: 0 auto;
+        height: 345px;
+        width: 100%;
+    }
+
+    .name-slider {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .name-slider .arrow-slider {
+        display: none;
+
+
+    }
+
+    .name-slider .white-title {
+
+        height: 30px;
+        text-align: center;
+        font: normal 22px/30px Vidaloka;
+        letter-spacing: 0;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        opacity: 1;
+    }
+
+    .name-slider .brown-title {
+        text-align: center;
+        font: normal 22px/30px Vidaloka;
+        letter-spacing: 0;
+        color: #B2936D;
+        text-transform: uppercase;
+        opacity: 1;
+    }
+
+    .inline-banner {
+
+
+        display: inline;
+
+    }
+
+    .home-slider img {
+        float: left;
+        padding-top: 0;
+        margin-top: 4px;
+        width: 143px;
+        height: 275px;
+        margin-left: 38px;
+    }
+
+    .details-slider {
+        margin-top: 23px;
+        float: left;
+        width: 165px;
+        height: 100%;
+        text-align: left;
+    }
+
+    .details-slider .year {
+        width: 62px;
+        height: 26px;
+        background: #B2936D 0% 0% no-repeat padding-box;
+        opacity: 1;
+        text-align: center;
+        font: normal 18px/24px Raleway;
+        letter-spacing: 0;
+        color: #FFFFFF;
+        opacity: 1;
+    }
+
+    .details-slider .place {
+        padding-top: 10px;
+        text-align: left;
+        font: normal 16px/21px Vidaloka;
+        letter-spacing: 0;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        opacity: 1;
+    }
+
+    .details-slider .type {
+
+        text-align: left;
+        font: normal 14px/19px Raleway;
+        letter-spacing: 0;
+        color: #FFFFFF;
+        text-transform: capitalize;
+        opacity: 1;
+    }
+
+    .details-slider .price {
+        margin-top: 23px;
+        text-align: left;
+        font: normal 15px/20px Vidaloka;
+        letter-spacing: 0;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        opacity: 1;
+    }
+
+    .details-slider .order-btn {
+        cursor: pointer;
+        text-align: center;
+        margin-top: 28px;
+        width: 165px;
+        height: 54px;
+        padding-left: 10px;
+        border: 1px solid #B2936D;
+        opacity: 1;
+        text-align: left;
+        font: Bold 11px/15px Raleway;
+        letter-spacing: 1.42px;
+        color: #B2936D;
+        text-transform: uppercase;
+        opacity: 1;
+        line-height: 50px;
+
+    }
+
+    .details-slider .arrow-slider {
+        margin-top: 25px;
+        display: block;
+    }
+
+    .dark-div .red-wine-bg {
+        top: 314px;
+        left: -129.27734375px;
+        position: absolute;
+        width: 316px;
+        height: 398px;
+        transform: matrix(0.97, -0.26, 0.26, 0.97, 0, 0);
+        opacity: 0.55;
+    }
+
+}
+
+.dark-div .red-wine-bg {
+    top: 823px;
+    left: -242.717px;
+    position: absolute;
+    width: 678px;
+    height: 856px;
+    transform: matrix(0.97, -0.26, 0.26, 0.97, 0, 0);
+    opacity: 0.55;
+}
+
+.btm-slider-container {
+
+    margin: 0 auto;
+    margin-top: 154px;
+    width: 100%;
+    text-align: center;
+    display: block;
+
+}
+
+.btm-slider-container .growers {
+    text-align: center;
+    font: normal 36px/48px Vidaloka;
+    letter-spacing: 0;
+    color: #B2936D;
+    opacity: 1;
+}
+
+.btm-slider-container .arrow-slider {
+    margin: 20px;
+
+}
+
+.btm-slider-container .arrow-slider-mobile {
+
+    margin-top: 5px;
+    margin-left: 10px;
+    display: none;
+    cursor: pointer;
+
+}
+
+.pre-slider-btm {
+    margin-right: 10px;
+    display: inline !important;
+}
+
+.next-slider-btm {
+
+    margin-left: 10px;
+    display: inline !important;
+}
+
+.btm-slider-container .bottom-slider {
+    width: 100%;
+    margin-top: 40px;
+
+
+
+}
+
+.bottom-slider .slider-img {
+
+    width: 229px !important;
+    height: 229px !important;
+
+    background: #DEDEDE 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+    border-radius: 100%;
+    margin: 0 34px;
+
+}
+
+.slider-img img {
+    width: 151px;
+    height: 151px;
+    margin: 45px 39px;
+
+    background-color: #DEDEDE;
+    mix-blend-mode: multiply;
+
+}
+
+@media (max-width:410px) {
+
+
+
+    .btm-slider-container {
+
+        margin: 0 auto;
+        margin-top: 107px !important;
+        width: 100%;
+        text-align: center;
+        display: block;
+
+    }
+
+    .btm-slider-container .arrow-slider {
+        display: none;
+    }
+
+    .btm-slider-container .growers {
+        text-align: center;
+        font: normal 22px/30px Vidaloka;
+        letter-spacing: 0;
+        color: #B2936D;
+        opacity: 1;
+    }
+
+    .btm-slider-container .bottom-slider {
+        width: 100%;
+        margin-top: 16px;
+
+
+
+    }
+
+    .bottom-slider .slider-img {
+        width: 101px !important;
+        height: 100px !important;
+
+        background: #DEDEDE 0% 0% no-repeat padding-box;
+        border: 1px solid #707070;
+        opacity: 1;
+        border-radius: 100%;
+        margin: 0 20px;
+
+    }
+
+    .slider-img img {
+        width: 66px;
+        height: 66px;
+        margin-top: 15px;
+        margin-left: 15px;
+
+        background-color: #DEDEDE;
+        mix-blend-mode: multiply;
+
+    }
+
+    .btm-slider-container .arrow-slider-mobile {
+
+        display: block !important;
+
+    }
+}
+
+.gallery {
+
+    width: 100%;
+    height: 1036px;
+}
+
+.gallery .left-gallery {
+    position: relative;
+    width: 49.04%;
+    float: left;
+    height: 100%;
+
+}
+
+.gallery .right-gallery {
+    position: relative;
+    width: 50.96%;
+    float: left;
+    height: 100%;
+
+}
+
+.left-gallery img {
+    width: 90%;
+
+    float: left;
+    margin-top: 248px;
+}
+
+.left-gallery .left-title-gallery {
+    position: absolute;
+    top: 456px;
+    left: 185px;
+    height: 96px;
+    text-align: center;
+    font: 36px/48px Exodus Demo;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+    text-align: center;
+}
+
+.left-title-gallery .black-title {
+    width: 239px;
+    background: #24292F 0% 0% no-repeat padding-box;
+
+}
+
+.left-title-gallery .brown-title {
+    width: 196px;
+    height: 45px;
+    background: #B69976 0% 0% no-repeat padding-box;
+    margin: 0 auto;
+}
+
+.right-gallery .right-first-img {
+    margin-top: 172.59px;
+    float: left;
+}
+
+.right-gallery .right-second-img {
+    margin-top: 68.41px;
+    float: left;
+}
+
+.right-gallery .right-first-title {
+    position: absolute;
+    top: 366px;
+    right: 108px;
+    width: 320px;
+    height: 149px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    font: 36px/48px Exodus Demo;
+    letter-spacing: 0;
+    color: #24292F;
+    opacity: 1;
+}
+
+.right-gallery .right-title-gallery {
+    position: absolute;
+    top: 699px;
+    right: 197px;
+    height: 96px;
+    text-align: center;
+    font: 36px/48px Exodus Demo;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+    text-align: center;
+}
+
+.right-title-gallery .black-title {
+    width: 303px;
+    background: #24292F 0% 0% no-repeat padding-box;
+
+}
+
+.right-title-gallery .brown-title {
+    width: 262px;
+    height: 45px;
+    background: #B69976 0% 0% no-repeat padding-box;
+    margin: 0 auto;
+}
+
+
+@media (max-width:410px) {
+
+    .gallery {
+
+        width: 100%;
+        height: 641.94px;
+    }
+
+    .gallery .left-gallery {
+
+        width: 100%;
+        height: 278px;
+    }
+
+    .left-gallery img {
+        margin: 0 12px;
+        margin-top: 15px;
+        width: 350px;
+        height: 263px;
+    }
+
+    .left-gallery .left-title-gallery {
+        position: absolute;
+        top: 126px;
+        left: 116px;
+        height: 96px;
+        text-align: center;
+        font: 22px/30px Exodus;
+        letter-spacing: 0;
+        color: #FFFFFF;
+        opacity: 1;
+        text-align: center;
+    }
+
+    .left-title-gallery .black-title {
+        width: 143px;
+
+        background: #24292F 0% 0% no-repeat padding-box;
+
+    }
+
+    .left-title-gallery .brown-title {
+        width: 121px;
+        height: 23px;
+        background: #B69976 0% 0% no-repeat padding-box;
+        margin: 0 auto;
+    }
+
+    .gallery .right-gallery {
+
+        width: 100%;
+        padding: 14px 13px;
+        padding-bottom: 18px;
+        height: 365px;
+
+    }
+
+    .right-gallery .right-first-img {
+        margin-top: 0px;
+        float: left;
+        width: 350px;
+        height: 193px;
+    }
+
+    .right-gallery .right-second-img {
+        margin-top: 14px;
+        float: left;
+        width: 350px;
+        height: 140px;
+    }
+
+    .right-gallery .right-first-title {
+        position: absolute;
+        top: 140px;
+        right: 88px;
+        width: 200px;
+        height: 70px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        text-align: center;
+        font: 22px/30px Exodus Demo;
+        letter-spacing: 0;
+        color: #24292F;
+        opacity: 1;
+    }
+
+    .right-gallery .right-title-gallery {
+        position: absolute;
+        top: 269px;
+        right: 97px;
+
+
+        text-align: center;
+        font: 22px/30px Exodus Demo;
+        letter-spacing: 0;
+        color: #FFFFFF;
+        opacity: 1;
+    }
+
+    .right-title-gallery .black-title {
+        width: 185px;
+        height: 25px;
+        background: #24292F 0% 0% no-repeat padding-box;
+
+    }
+
+    .right-title-gallery .brown-title {
+        width: 168px;
+        height: 26px;
+        background: #B69976 0% 0% no-repeat padding-box;
+        margin: 0 auto;
+    }
+
+
+}
+
+/* //////////////////////////////Home page/////////////////////////// */
+/* ////top hidden menu */
+#upper-content {
+
+    padding-top: 31px;
+    width: 100%;
+    display: none;
+    background: #4D4034 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+}
+
+
+
+div.links:nth-child(1)>span:nth-child(2) {
+    display: none;
+}
+
+
+
+div.links:nth-child(4)>span:nth-child(2) {
+    display: none;
+}
+
+
+
+div.links:nth-child(5)>span:nth-child(2) {
+    display: none;
+}
+
+.titles {
+
+
+    display: block;
+    width: 100%;
+
+
+}
+
+.link-header span {
+    display: none;
+}
+
+#close-upper {
+    position: absolute;
+    color: white;
+    opacity: 1;
+    float: left;
+    top: 31px;
+    left: 75px;
+    cursor: pointer;
+}
+
+#same-row {
+    position: relative
+}
+
+#white-title {
+    text-align: center;
+
+    font-size: 27px;
+    font-family: Vidaloka, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    font-weight: normal;
+    letter-spacing: 0;
+    color: #FBFBFB;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+#brown-title {
+    text-align: center;
+
+    font-size: 27px;
+    font-family: Vidaloka, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    font-weight: normal;
+    letter-spacing: 0;
+    color: #B2936D;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.grid-links .links #replace-sign {
+
+    display: none;
+}
+
+.grid-links {
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: repeat(5, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 89px;
+    margin: 25px 72px;
+}
+
+.link-lists1,
+.link-lists2,
+.link-lists3 {
+    display: block;
+}
+
+div.links:nth-child(2)>ul:nth-child(1) {
+    margin-top: 40px;
+}
+
+div.links:nth-child(3)>ul:nth-child(1) {
+    margin-top: 40px;
+}
+
+
+@media (max-width: 968px) {
+    .grid-links {
+        display: grid;
+        display: -ms-grid;
+        grid-template-columns: 1fr;
+        -ms-grid-columns: 1fr;
+        column-gap: 89px;
+        margin: 25px 72px;
+    }
+
+    .links {
+        padding-left: 0px !important;
+        border: none !important;
+    }
+
+    .grid-links .link2,
+    .link3 {
+
+        margin-top: 0px !important;
+    }
+
+}
+
+@media (max-width: 410px) {
+
+
+    .first-head {
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+
+
+
+
+    div.links:nth-child(4)>div:nth-child(1) {
+        padding-top: 11px;
+    }
+
+
+
+    div.links:nth-child(1)>div:nth-child(1) {
+        margin-top: 11px;
+    }
+
+    .grid-links {
+        margin-left: 15px !important;
+        border-top: 1px solid #707070;
+        margin-right: 15px !important;
+        margin-top: 15px !important;
+        padding-top: 25px !important;
+    }
+
+    .grid-links .link-header {
+        display: block;
+        height: 50px;
+        padding-top: 11px;
+        border-bottom: 1px solid black;
+        margin-bottom: 15px;
+        cursor: pointer;
+    }
+
+    .link-header .link-title {
+
+        float: left;
+    }
+
+    .link-header span {
+
+        display: block;
+
+        float: right;
+    }
+
+    div.links:nth-child(2)>ul:nth-child(1) {
+        margin-top: 0px;
+    }
+
+    div.links:nth-child(3)>ul:nth-child(1) {
+        margin-top: 0px;
+    }
+
+    #white-title {
+        display: none;
+
+    }
+
+    #brown-title {
+        font: Bold 16px/21px Raleway;
+        letter-spacing: 2.06px;
+        color: #FFFFFF;
+        margin-left: 45px;
+        text-align: left;
+
+    }
+
+    #close-upper {
+        /*! position: absolute; */
+        color: white;
+        opacity: 1;
+        float: left;
+        /*! top: 31px; */
+        /*! left: 75px; */
+        cursor: pointer;
+        top: 31px !important;
+        left: 15px !important;
+
+    }
+
+    .grid-links {
+        display: grid;
+        display: -ms-grid;
+        grid-template-columns: 1fr;
+        -ms-grid-columns: 1fr;
+        column-gap: 89px;
+        margin: 25px 72px;
+    }
+
+    .links {
+        padding-left: 0px !important;
+        border: none !important;
+    }
+
+    .links ul {
+        display: none;
+    }
+
+    .grid-links .link2,
+    .link3 {
+
+        margin-top: 0px !important;
+    }
+}
+
+.grid-links .link-title {
+    font: Bold 14px/19px Raleway;
+    letter-spacing: 1.81px;
+    color: #FBFBFB;
+    text-transform: uppercase;
+    opacity: 1;
+    margin-bottom: 20px;
+}
+
+.grid-links .link2,
+.link3 {
+
+    margin-top: 40px;
+}
+
+.grid-links .link4,
+.link5 {
+
+    border-left: 1px solid black;
+    padding-left: 60px;
+}
+
+.grid-links .links ul li a {
+    font: normal 14px/24px Raleway;
+    letter-spacing: 1.81px;
+    color: #DBB68B;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+
+
+.show-menu {
+    cursor: pointer;
+}
+
+/* /////nav bar */
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 14px 56px;
+    flex-wrap: wrap;
+}
+
+
+
+.left-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.left-menu .show-menu {
+    margin-left: 36px;
+
+}
+
+.right-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.right-menu .btn,
+.cart {
+    margin-left: 36px;
+}
+
+.btn-store {
+    cursor: pointer;
+    width: 204px;
+    height: 40px;
+    background: var(--primary-color) 0% 0% no-repeat padding-box;
+    border-radius: 22px;
+    opacity: 1;
+}
+
+.btn-store a {
+
+
+    color: #262626;
+    text-decoration: none;
+    /* text-decoration-color:  is for remove blue color of the links  */
+    text-align: left;
+    font: Bold 14px/19px Raleway;
+    letter-spacing: 1.81px;
+    color: #FFFFFF;
+    opacity: 1;
+
+    line-height: 41px;
+    letter-spacing: 1.59px;
+    font-size: 12px;
+    padding-left: 25px;
+    padding-top: 0px;
+    margin-top: 0px;
+
+
+
+}
+
+.cart {
+    top: 31px;
+    left: 1088px;
+    width: 122px;
+    height: 40px;
+    background: #B2936D 0% 0% no-repeat padding-box;
+    border-radius: 22px;
+    opacity: 1;
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+
+
+    padding-top: 0px;
+    padding-left: 0px;
+    overflow: hidden;
+    text-align: center;
+
+
+}
+
+.cart span {
+
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    margin-left: -13px;
+    border-radius: 22px;
+    width: 39px;
+    height: 39px;
+    margin-right: 6px;
+}
+
+.cart span .fa-shopping-bag {
+    padding-top: 11px;
+    margin-left: 0px;
+}
+
+
+.btn-search {
+
+    width: 15px;
+    height: 15px;
+    color: #B2936D;
+    opacity: 1
+}
+
+.btn-profile {
+
+    width: 15px;
+    height: 15px;
+    color: #B2936D;
+    opacity: 1;
+
+
+
+}
+
+.btn-lang {
+    width: 15px;
+    height: 19px;
+    text-align: left;
+    font: SemiBold 14px/19px Raleway;
+    letter-spacing: 0;
+    color: #B2936D;
+    opacity: 1;
+}
+
+@media (max-width: 779px) {
+    .logo {
+        width: 40px;
+    }
+
+    .btn-store {
+        display: none;
+
+    }
+}
+
+@media (max-width: 410px) {
+
+
+
+    .main-nav {
+        display: flex;
+        align-items: center;
+
+        justify-content: space-between;
+        margin: 7px 18px;
+        flex-wrap: wrap;
+        border-bottom: 1px solid #F2F2F2;
+        margin-bottom: 0;
+        padding-bottom: 7px;
+    }
+
+    .logo {
+        width: 40px;
+    }
+
+
+
+
+
+    .show-menu {
+        margin-left: 15px;
+    }
+
+
+    .cart {
+        margin-left: 15px;
+        font: Bold 14px/19px Raleway !important;
+    }
+
+
+}
+
+/* /////main content */
+
+
+
+.store-title {
+
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    height: inherit;
+}
+
+.store-title h1 {
+
+    margin-top: 29px;
+
+
+
+    font: normal 39px/52px Vidaloka;
+    font-size: 39px;
+    font-family: Vidaloka, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 52px;
+    font-weight: normal;
+    letter-spacing: 0;
+    color: #24292F;
+    opacity: 1;
+    margin: 0 auto;
+}
+
+
+.main-content {
+    margin-top: 33px;
+    margin-left: 43px;
+}
+
+.left-sort {
+    width: 20%;
+    float: left;
+    -webkit-box-shadow: 0px 3px 6px #00000014;
+    -moz-box-shadow: 0px 3px 6px #00000014;
+    box-shadow: 0px 3px 6px #00000014;
+}
+
+
+/* /////product grid */
+.product-list {
+
+    width: 80%;
+    margin-top: 0px;
+    padding-top: 23px;
+    padding-left: 73px;
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: repeat(3, 172px);
+    -ms-grid-columns: 172px 172px 172px;
+    column-gap: 170px;
+    row-gap: 85px;
+}
+
+@media (max-width:410px) {
+
+
+
+    .store-title h1 {
+
+        font: normal 22px/30px Vidaloka !important;
+
+    }
+
+    .product-list {
+        /* grid-template-columns: repeat(3, 172px); */
+        /* column-gap: 170px; */
+        grid-template-columns: repeat(2, 2fr);
+        -ms-grid-columns: 2fr 2fr;
+        column-gap: 0px;
+    }
+
+
+    .product-list {
+        padding-left: 0px;
+        margin-left: 26px;
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1080px) {
+    .product-list {
+
+
+
+        grid-template-columns: repeat(2, 172px);
+        -ms-grid-columns: 172px 172px;
+        column-gap: 153px;
+    }
+}
+
+/* /////item store  */
+.items {
+    display: block;
+
+    width: 174px;
+    max-height: 467.45px;
+    position: relative;
+}
+
+.items .bottle {
+
+    height: 313px;
+}
+
+.items .place {
+    margin-top: 17px;
+    width: 130px;
+    height: 19px;
+    text-align: center;
+    font: normal 14px/19px Raleway;
+    letter-spacing: 0;
+    color: #4B4035;
+    text-transform: uppercase;
+    opacity: 1;
+
+}
+
+.items .price {
+
+    margin: auto;
+    text-align: center;
+    font: normal 25px/33px Vidaloka;
+    letter-spacing: 0;
+    color: #B2936D;
+    text-transform: uppercase;
+    opacity: 1;
+
+}
+
+.items .details {
+    margin-top: 5px;
+
+    height: 54px;
+
+    text-align: center;
+    font: normal 20px/27px Vidaloka;
+    letter-spacing: 0;
+    color: #4B4035;
+    text-transform: capitalize;
+    opacity: 1;
+
+}
+
+@media (max-width:410px) {
+
+    .items .price {
+
+        font: normal 16px/21px Vidaloka !important;
+    }
+
+    .items .details {
+
+        font: Regular 16px/21px Vidaloka;
+    }
+}
+
+/* /////filer desktop version */
+.filter-block {
+    padding-top: 21px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.filter-block #show-hide {
+    width: 100%;
+    height: 45px;
+    cursor: pointer;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #DBDBDA;
+    opacity: 1;
+    margin: 0 auto;
+    margin-bottom: 21px;
+
+
+}
+
+.filter-block #show-hide h4 {
+
+    float: left;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.filter-block #show-hide .fa-angle-down {
+    float: right;
+}
+
+
+
+
+.filter-block #show-hide .fa-angle-down {
+    margin-top: 20px;
+    margin-right: 20px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: -webkit-transform .3s;
+    -moz-transition: -moz-transform .3s;
+    transition: transform 0.3s
+}
+
+.filter-block #show-hide.closed .fa-angle-down {
+    -webkit-transform: translateY(-50%) rotate(-90deg);
+    -moz-transform: translateY(-50%) rotate(-90deg);
+    -ms-transform: translateY(-50%) rotate(-90deg);
+    -o-transform: translateY(-50%) rotate(-90deg);
+    transform: translateY(-50%) rotate(-90deg)
+}
+
+.filter-block .filter-content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.filter-content {
+
+    display: block;
+
+}
+
+.pays-content {
+    display: grid;
+    display: -ms-grid;
+    margin: 10px 0;
+
+
+}
+
+@media (max-width: 843px) {
+
+    .main-content {
+
+        display: inline;
+    }
+
+    .left-sort {
+
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+        width: 100%;
+    }
+
+    .btn-store,
+    .btn-profile,
+    .btn-lang {
+        display: none;
+    }
+
+    .filter-content {
+
+        display: none;
+
+    }
+
+    .pays-content {
+        display: grid;
+        display: -ms-grid;
+        grid-template-columns: 1fr 1fr;
+        -ms-grid-columns: 1fr 1fr;
+        column-gap: 5rem;
+
+    }
+
+}
+
+.filter-content>div:nth-child(1) {
+    margin-top: 0px !important;
+}
+
+
+#show-pays {
+    width: 100%;
+    height: 24px;
+    cursor: pointer;
+    border-bottom: 1px solid #70707038;
+    margin-top: 27px;
+    margin-bottom: 21px;
+}
+
+#show-pays h4 {
+
+    float: left;
+    bottom: 0;
+
+}
+
+#show-pays span {
+
+    float: right;
+
+
+}
+
+/* ////filter for mobile */
+.filter {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 410px) {
+    .filter {
+        display: inline !important;
+        position: fixed !important;
+        top: 759px !important;
+        left: 100px;
+        width: 175px;
+        height: 46px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+        border: 1px solid #70707026;
+        border-radius: 22px;
+        opacity: 1;
+    }
+
+    .filter i {
+        width: 15px;
+        height: 15px;
+        margin: 15px 58px;
+        margin-right: 0;
+    }
+
+    .filter span {
+        text-align: center;
+        font: Bold 12px/16px Raleway;
+        letter-spacing: 0;
+        color: #4B4035;
+        text-transform: uppercase;
+        opacity: 1;
+        width: 36px;
+        height: 16px;
+    }
+
+    .filter-block-mobile {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: white;
+        width: 100%;
+        height: 100%;
+    }
+
+    .filter-block-mobile #show-hide {
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .filter-block-mobile .filter-content-mobile {
+
+        height: 100%;
+        width: 100%;
+        z-index: 100;
+    }
+
+    .filter-content-mobile div {
+
+        margin-top: 0;
+    }
+
+
+}
+
+.filter-block-mobile {
+    display: none;
+    width: 100%;
+    height: 918px;
+    background: #F9F9F8 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+}
+
+/* /////////////////////////////////////////////////////////end of Store */
+/* //////////////////////////////////////////////////////////////Single page */
+
+
+
+
+.single-container {
+
+    width: 100%;
+    height: 904px;
+    position: relative;
+    z-index: 0;
+}
+
+.single-container .main-nav {
+    padding: 17px 54px;
+    z-index: 2;
+    margin: 0px;
+}
+
+.single-container .main-nav .right-menu {
+
+    padding-bottom: 15px;
+
+}
+
+.single-container .show-menu {
+    color: #ffffff;
+}
+
+.single-container .single-left {
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: -1px;
+    width: 700px;
+    height: 100%;
+    background: #24292F 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.single-left .blur-bg {
+    position: absolute;
+    top: 260px;
+    left: 207px;
+    width: 214px;
+    height: 451px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 0.16;
+    filter: blur(34px);
+}
+
+.slider-element {
+    text-align: center;
+    margin-top: 123px;
+    position: relative;
+}
+
+.slider-element .pre-slider {
+    position: absolute;
+    top: 360px;
+    left: 640px;
+
+
+    opacity: 1;
+}
+
+.slider-element .next-slider {
+    position: absolute;
+    top: 360px;
+    left: 51px;
+    opacity: 1;
+}
+
+.slider-element .pre-slider,
+.slider-element .next-slider {
+    cursor: pointer;
+}
+
+.slider-element img {
+    display: inline-block !important;
+
+}
+
+
+
+.single-right {
+    width: 47%;
+
+    float: right;
+
+}
+
+.single-right .desc-container {
+
+
+    width: 660px;
+    margin: 0 auto;
+    margin-top: 0px;
+    border-top: 1px solid #DFDFDE;
+    padding-top: 26px;
+}
+
+.single-right .desc-container .heart-div {
+    display: block;
+    cursor: pointer;
+}
+
+.desc-container .details-desc {
+    margin-top: 80px;
+    text-align: left;
+}
+
+.details-desc .single-date {
+
+    height: 24px;
+    text-align: left;
+    font: normal 20px/24px Raleway;
+    letter-spacing: 0;
+    color: #4B4035;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.details-desc .single-name {
+
+    height: 52px;
+    text-align: left;
+    font: normal 39px/52px Vidaloka;
+    letter-spacing: 0;
+    color: #4B4035;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.details-desc .price-details {
+
+    margin-top: 27px;
+    width: 100%;
+}
+
+.price-details * {
+    display: inline;
+}
+
+.price-details .sub-price {
+    font: normal 28px/37px Exodus Demo;
+    letter-spacing: 0;
+    color: #B2936D;
+    opacity: 1;
+}
+
+.price-details .tax-price-1 {
+    width: 48px;
+    height: 16px;
+    text-align: left;
+    font: no 14px/16px Raleway;
+    letter-spacing: 0;
+    color: #4B4035;
+    opacity: 1;
+    margin-left: 27px;
+}
+
+.price-details .line-price {
+    margin-left: 16.5px;
+    margin-right: 18px;
+    width: 0px;
+    height: 24px;
+    border: 1px solid #707070;
+    opacity: 0.34;
+
+}
+
+.price-details .tax-price-1 {
+    width: 102px;
+    height: 16px;
+    text-align: left;
+    font: normal 14px/16px Raleway;
+    letter-spacing: 0;
+    color: #4B4035;
+    opacity: 1;
+}
+
+.details-desc .list-desc {
+    margin-top: 44px;
+
+    height: 71px;
+    text-align: left;
+    font: normal 13px/28px Raleway;
+    letter-spacing: 0;
+    color: #24292F;
+    opacity: 1;
+
+}
+
+.list-desc ul li {
+
+    /* set color of list item text */
+    list-style: none;
+    margin: 0 0 16px 1.1225em;
+    /* Give the bullet room on the left hand side */
+    padding: 0;
+    position: relative;
+}
+
+.list-desc ul li::before {
+    color: #B2936D;
+
+    content: "\2022";
+
+    display: inline-block;
+    font-size: 1em;
+
+    left: -1.1225em;
+
+    position: absolute;
+
+    top: 0em;
+
+}
+
+.icons-grid {
+    margin-top: 63px;
+    padding-top: 10px;
+    padding-bottom: 21px;
+    border-bottom: 1px solid #70707029;
+    ;
+    border-top: 1px solid #70707029;
+    ;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.icons-grid * {
+    text-align: center;
+}
+
+.icons-grid .glass {
+    margin-top: 18px;
+}
+
+.icons-grid .grapes {
+    margin-top: 15px;
+}
+
+.add-cart {
+    height: 64px;
+    width: 448px;
+    margin: 61px 113px;
+    border: 1px solid #B2936D;
+}
+
+.add-cart * {
+    display: inline-block;
+
+}
+
+.add-cart .qty {
+    padding-top: 12px;
+    width: 212px;
+    height: 57px;
+
+    opacity: 1;
+    text-align: center;
+    font: normal 29px/34px Raleway;
+    letter-spacing: 0;
+    color: #24292F;
+    opacity: 1;
+}
+
+.removeone {
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.addone {
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.add-cart .btn-add {
+    cursor: pointer;
+    line-height: 47px !important;
+    text-align: center;
+    height: 39px;
+    background: #B2936D 0% 0% no-repeat padding-box;
+    opacity: 1;
+    width: 220px;
+    font: Bold 14px/16px Raleway;
+    letter-spacing: 1.81px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.add-cart .btn-add i {
+    letter-spacing: 8.83px;
+    opacity: 1;
+
+}
+
+.links-grid-desc {
+    text-align: left;
+    font: Bold 14px/16px Raleway;
+    letter-spacing: 1.81px;
+    color: #B2936D;
+    text-transform: uppercase;
+    opacity: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 0;
+}
+
+div.link-item-desc:nth-child(3) {
+    margin-left: 27px;
+}
+
+.links-grid-desc {
+    letter-spacing: 0px;
+}
+
+
+
+
+@media (max-width:410px) {
+    .single-container .main-nav {
+        padding: 12px 16px;
+        background-color: black;
+    }
+
+    .single-container .right-menu {
+        padding: 12px 16px;
+
+    }
+
+    .single-container .single-left {
+        display: none;
+    }
+
+    .single-container .single-right {
+        width: 100%;
+    }
+
+    .desc-container {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+
+    .single-name {
+        font-weight: 400;
+        font-size: 26px;
+    }
+
+
+
+    .single-date {
+        font-size: 15px;
+    }
+
+
+
+    .sub-price {
+        font-size: 18px;
+    }
+
+
+
+    .list-desc {
+        font-size: 9px;
+    }
+
+
+
+    .list-desc>ul:nth-child(1) {
+        line-height: 13px;
+        font-size: 9px;
+    }
+
+
+
+    .icons-grid {
+
+        margin: auto auto;
+        display: inline-block;
+        padding-left: 63px;
+        border-top: none;
+        border-bottom: none;
+    }
+
+    .add-cart {
+        margin-left: 0px;
+        margin-right: 0px;
+
+
+        width: 332px;
+
+    }
+
+    .add-cart .qty {
+
+        width: 97px;
+    }
+
+    .btn-add {
+        font-size: 11px;
+
+    }
+
+    .qty {
+        font-size: 25px;
+    }
+
+    .links-grid-desc {
+        display: none;
+    }
+
+    .cart-modal {
+        top: 0px;
+        left: 0px;
+        width: 376px;
+        height: 812px;
+    }
+
+    .qty {
+        font-size: 21px !important;
+    }
+
+    .btn-add {
+        font-size: 10px !important;
+    }
+
+
+}
+
+/* //////////////////////////////////////////////////////////////Single page */
+
+/* /////////////////////cart modal */
+.cart-modal {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 912px;
+    width: 488px;
+    height: 918px;
+    background: #F9F9F8 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+    padding: 22px 35px;
+
+}
+
+.cart-modal .modal-header {
+
+    height: 38px;
+    width: 100%;
+    border-bottom: 1px solid #707070;
+    padding-bottom: 13.5px;
+
+}
+
+.modal-header .close {
+    float: right;
+    cursor: pointer;
+}
+
+.modal-header .basket {
+    float: left;
+    text-align: left;
+    font: normal 29px/38px Vidaloka;
+    letter-spacing: 0;
+    color: #B2936D;
+    opacity: 1;
+}
+
+.cart-modal .modal-body {
+    width: 100%;
+
+}
+
+.modal-body .body-header {
+    width: 100%;
+    display: inline-block;
+    margin-top: 27px;
+}
+
+.body-header h1 {
+    float: left;
+    text-align: left;
+    font: normal 29px/38px Vidaloka;
+    letter-spacing: 0;
+    color: #4B4035;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.body-header .total-price {
+    float: right;
+    text-align: right;
+    font: 600 21px/25px Raleway;
+    letter-spacing: 0;
+    color: #B2936D;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.modal-body .pay-now {
+    margin-top: 29px;
+    width: 100%;
+    height: 54px;
+    background: #B2936D 0% 0% no-repeat padding-box;
+    text-align: center;
+    opacity: 1;
+    font: 600 14px/16px Raleway;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    opacity: 1;
+    line-height: 52px;
+}
+
+.cart-item {
+    position: relative;
+
+    width: 100%;
+    margin-top: 34px;
+    height: 245px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.cart-item .item-img {
+
+    position: absolute;
+    width: 15px;
+    height: 141px;
+    background: #000000B5 0% 0% no-repeat padding-box;
+    opacity: 1;
+    filter: blur(20px);
+    top: 40px;
+    left: 65.3px;
+
+}
+
+.cart-item img {
+    float: left;
+    width: 44px;
+    height: 161px;
+    margin-top: 42px;
+    margin-left: 38px;
+}
+
+.cart-item .item-delete {
+    position: absolute;
+    top: 31px;
+    right: 21.22px;
+    width: 15px;
+    height: 19px;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.item-delete i {
+    color: #B2936D;
+}
+
+.cart-item .item-details {
+    display: block;
+    margin-top: 24px;
+    float: left;
+    text-align: left;
+    margin-left: 45px;
+}
+
+.cart-item .item-name {
+    float: left;
+
+
+
+    font: normal 21px/28px Vidaloka;
+    letter-spacing: 0;
+    color: #4B4035;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.cart-item .item-place {
+
+    margin-top: 9px;
+    font: normal 13px/15px Raleway;
+    letter-spacing: 0;
+    color: #4B4035;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.cart-item .single-price {
+
+    height: 24px;
+    text-align: left;
+    font: 18px/24px Exodus Personal Use;
+    letter-spacing: 0;
+    color: #4B4035;
+    opacity: 1;
+}
+
+.cart-item .item-qty {
+    width: 161px;
+    height: 57px;
+    border: 1px solid #B2936D;
+    opacity: 1;
+    margin-top: 20px;
+
+}
+
+.cart-item .item-total {
+    margin-top: 16px;
+    height: 24px;
+    text-align: left;
+    font: 18px/24px Exodus Personal Use;
+    letter-spacing: 0;
+    color: #B2936D;
+    opacity: 1;
+}
+
+.item-qty {
+    padding-top: 12px;
+    width: 212px;
+    height: 57px;
+
+    opacity: 1;
+    text-align: center;
+    font: normal 29px/34px Raleway;
+    letter-spacing: 0;
+    color: #24292F;
+    opacity: 1;
+}
+
+.item-qty * {
+    display: inline;
+
+}
+
+.item-qty .removeone {
+
+    float: left;
+    font: normal 36px/42px Raleway;
+    letter-spacing: 0;
+    color: #141413;
+    opacity: 0.21;
+    line-height: 27px;
+    margin-left: 20px;
+}
+
+.item-qty .addone {
+    height: 100%;
+    float: right;
+    font: normal 36px/42px Raleway;
+    letter-spacing: 0;
+    color: #141413;
+    opacity: 0.21;
+    margin-right: 20px;
+    line-height: 32px;
+}
+
+.item-qty .result {
+    text-align: center;
+    font: normal 21px/27px Raleway;
+    letter-spacing: 0;
+    color: #141413;
+    opacity: 1;
+
+
+}
+
+@media (max-width:410px) {
+    .cart-modal {
+        top: 0px !important;
+        left: 0px !important;
+        width: 100% !important;
+        height: 100% !important;
+
+
+    }
+
+    .modal-header .basket {
+        float: left;
+        text-align: left;
+        font: normal 20px/27px Vidaloka;
+        letter-spacing: 0;
+        color: #B2936D;
+        opacity: 1;
+    }
+
+    .modal-body .body-header {
+        width: 100%;
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    .body-header h1 {
+        text-align: left;
+        font: normal 20px/27px Vidaloka;
+        letter-spacing: 0;
+        color: #4B4035;
+        text-transform: capitalize;
+        opacity: 1;
+    }
+
+    .modal-body .pay-now {
+        margin-top: 26px;
+        width: 100%;
+        height: 41px;
+        background: #B2936D 0% 0% no-repeat padding-box;
+        text-align: center;
+        opacity: 1;
+        font: 600 12px/14px Raleway;
+        letter-spacing: 0;
+        color: #FFFFFF;
+        text-transform: capitalize;
+        opacity: 1;
+        line-height: 44px;
+    }
+
+    .cart-item {
+        position: relative;
+
+        width: 100%;
+        margin-top: 26px;
+        height: 245px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        opacity: 1;
+    }
+
+    .cart-item .item-img {
+
+        position: absolute;
+        width: 11px;
+        height: 108px;
+        background: #000000B5 0% 0% no-repeat padding-box;
+        opacity: 1;
+        filter: blur(20px);
+
+        left: 70px;
+    }
+
+    .cart-item img {
+        float: left;
+        width: 44px;
+        height: 161px;
+        margin-top: 42px;
+        margin-left: 38px;
+    }
+
+    .cart-item .item-name {
+        float: left;
+
+
+
+        font: normal 18px/24px Vidaloka;
+        letter-spacing: 0;
+        color: #4B4035;
+        text-transform: capitalize;
+        opacity: 1;
+    }
+
+    .cart-item .item-place {
+
+        margin-top: 9px;
+        font: normal 13px/15px Raleway;
+        letter-spacing: 0;
+        color: #4B4035;
+        text-transform: uppercase;
+        opacity: 1;
+    }
+
+    .cart-item .single-price {
+
+        height: 24px;
+        text-align: left;
+        font: 15px/20px Exodus Personal Use;
+        letter-spacing: 0;
+        color: #4B4035;
+        opacity: 1;
+    }
+
+    .cart-item .item-qty {
+        width: 124px;
+        height: 44px;
+        ;
+        border: 1px solid #B2936D;
+        opacity: 1;
+        padding-top: 7px;
+        margin-top: 16px;
+    }
+
+    .item-qty .result {
+        float: left;
+        text-align: center;
+        font: normal 21px/27px Raleway;
+        letter-spacing: 0;
+        color: #141413;
+        opacity: 1;
+        margin-left: 7px;
+
+    }
+
+    .cart-item .item-total {
+        margin-top: 16px;
+        height: 24px;
+        text-align: left;
+        font: 15px/20px Exodus Personal Use;
+        letter-spacing: 0;
+        color: #B2936D;
+        opacity: 1;
+    }
+}
+
+
+/* /////////////////////cart modal */
+/* //////////////////////sign up modal */
+.signup-modal {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 343px;
+    width: 714px;
+    height: 839px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+    padding: 49px 39px;
+}
+
+.signup-modal .signp-header {
+    display: block;
+    width: 100%;
+    height: 38px !important;
+}
+
+.signup-header .signup-title {
+
+    float: left;
+    width: 215px;
+    height: 38px;
+    text-align: left;
+    font: normal 29px/38px Vidaloka;
+    letter-spacing: 0;
+    color: #24292F;
+    opacity: 1;
+}
+
+.signup-header .close {
+    cursor: pointer;
+    float: right;
+    width: 215px;
+    height: 38px;
+    text-align: right;
+    font: normal 29px/38px Vidaloka;
+    letter-spacing: 0;
+    color: #24292F;
+    opacity: 1;
+}
+
+.signup-input {
+    width: 100%;
+    margin-top: 44px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 54px;
+    row-gap: 33px;
+}
+
+.signup-input .input-element label {
+    display: block;
+    text-align: left;
+    font: normal 14px/32px Raleway;
+    letter-spacing: 0;
+    color: #24292F;
+    opacity: 1;
+}
+
+.input-element input {
+    height: 50px;
+    width: 70%;
+    border-color: #707070 !important;
+    border-width: 1px;
+    padding-left: 10px;
+}
+
+.fname-div,
+.country-div,
+.lname-div,
+.email-div,
+.dob-div,
+.phone-div,
+.pass-div {
+    width: 290px;
+
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070 !important;
+    opacity: 0.4;
+}
+
+.signup-input input {
+
+    border: none;
+}
+
+.country-div input {
+    width: 70%;
+}
+
+.country-div i {
+    cursor: pointer;
+    float: right;
+    margin-top: 22px;
+    margin-right: 21px;
+}
+
+.phone-div .flag {
+    cursor: pointer;
+    width: 30%;
+    float: left;
+    height: 53px;
+    padding-top: 15px;
+    padding-left: 12px;
+    border-right: 1px solid#707070;
+}
+
+.flag i {
+    margin-left: 11px;
+}
+
+.phone-div input {
+    width: 60%;
+
+}
+
+.dob-div input {
+    padding-left: 0 !important;
+    text-align: center;
+    width: 30%;
+    border-right: 1px solid black;
+}
+
+.dob-div input:nth-child(3) {
+
+    border-right: none;
+}
+
+.sms-div .digit {
+    margin-left: 12px;
+    float: left;
+    width: 34px;
+    border-bottom: 1px solid black;
+    height: 100%;
+}
+
+.sms-div .digit:nth-child(1) {
+    margin-left: 0px;
+}
+
+.sms-div .timer {
+    float: right;
+    width: 30%;
+}
+
+.sms-div .timer .time {
+    float: right;
+
+}
+
+.password-inputs {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 54px;
+    row-gap: 33px;
+
+}
+
+.password-inputs input {
+    height: 50px;
+    width: 70%;
+    border-color: #707070 !important;
+    border-width: 1px;
+    padding-left: 10px;
+    border: none;
+}
+
+.agreement {
+    font: normal 14px/20px Raleway;
+    letter-spacing: 0;
+    color: #24292F;
+    opacity: 1;
+    margin-top: 27px;
+
+
+}
+
+.agreement i {
+    float: left;
+    margin-right: 7px;
+}
+
+.signup-btn {
+    color: #fff;
+    padding-top: 15px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 35px;
+    width: 206px;
+    height: 50px;
+    background: #B2936D 0% 0% no-repeat padding-box;
+    opacity: 1;
+    font: 600 14px/19px Raleway;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+@media (max-width:410px) {
+    .single-container .btn-profile {
+        display: block !important;
+        margin-left: 17px;
+    }
+
+    .signup-modal {
+        display: none;
+        top: 0px;
+        left: 0px;
+        width: 375px;
+        height: 988px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        opacity: 1;
+        padding: 49px 39px;
+    }
+
+    .input-element input {
+        height: 40px;
+        width: 50%;
+        border-color: #707070 !important;
+        border-width: 1px;
+        padding-left: 10px;
+    }
+
+    .signup-modal {
+        padding-top: 0px;
+    }
+
+    .signup-input {
+        margin-top: 0px;
+    }
+
+    .signp-header {
+        float: none;
+        display: block;
+        width: 100%;
+        height: 38px !important;
+        text-align: center !important;
+    }
+
+    .signup-header .signup-title {
+        margin: auto;
+        float: none;
+        width: 215px;
+        height: 38px;
+        text-align: center !important;
+        font: normal 29px/38px Vidaloka;
+        letter-spacing: 0;
+        color: #24292F;
+
+    }
+
+    .signup-header .close {
+        margin: auto;
+        display: block;
+        cursor: pointer;
+        float: none !important;
+
+        text-align: center !important;
+        font: normal 29px/38px Vidaloka;
+        letter-spacing: 0;
+        color: #24292F;
+        opacity: 1;
+    }
+
+    .signup-input {
+        grid-template-columns: 1fr;
+        row-gap: 12px;
+    }
+
+    .signup-input .input-element label {
+        display: block;
+        text-align: left;
+        font: normal 13px/32px Raleway;
+        letter-spacing: 0;
+        color: #24292F;
+        opacity: 1;
+    }
+
+    .password-inputs {
+        margin-top: 7px;
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 54px;
+        row-gap: 7px;
+
+    }
+
+    .password-inputs input {
+        height: 40px;
+        width: 70%;
+        border-color: #707070 !important;
+        border-width: 1px;
+        padding-left: 10px;
+        border: none;
+    }
+
+    .country-div i {
+        cursor: pointer;
+        float: right;
+        margin-top: 16px;
+        margin-right: 21px;
+    }
+
+    .dob-div input {
+        padding-left: 0 !important;
+        text-align: center;
+        width: 30%;
+        border-right: 1px solid black;
+    }
+
+    .dob-div input:nth-child(3) {
+
+        border-right: none;
+    }
+
+    .phone-div .flag {
+        cursor: pointer;
+        width: 30%;
+        float: left;
+        height: 42px;
+        padding-top: 10px;
+        padding-left: 12px;
+        border-right: 1px solid#707070;
+    }
+
+    .flag i {
+        margin-left: 11px;
+    }
+
+    .agreement {
+        font: normal 14px/20px Raleway;
+        letter-spacing: 0;
+        color: #24292F;
+        opacity: 1;
+        margin-top: 25px;
+
+
+    }
+
+    .signup-btn {
+        color: #fff;
+        padding-top: 15px;
+        text-align: center;
+        cursor: pointer;
+        margin-top: 8px;
+        width: 100%;
+        height: 50px;
+        background: #B2936D 0% 0% no-repeat padding-box;
+        opacity: 1;
+        font: 600 14px/19px Raleway;
+        letter-spacing: 0;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        opacity: 1;
+    }
+}
+
+
+/* //////////////////////sign up modal */
