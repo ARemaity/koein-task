@@ -273,6 +273,7 @@ a {
     .home-banner {
         height: 804px;
         background-size: 861px 811px;
+        background-position: top left 715px;
     }
 
     .home-banner .main-nav {
