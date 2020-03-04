@@ -1,6 +1,6 @@
 $(document).ready(function() {
   var width_screen = $(window).width();
-  if (width_screen <= 375) {
+  if (width_screen <=410) {
     $(".close-it").removeClass("fa-times");
     $(".close-it").addClass("fa-chevron-left");
   } else if (width_screen > 1400) {
@@ -159,7 +159,7 @@ $(document).ready(function() {
     }
   });
   // show hide top header link
-  $(".second-head").click(function(event) {
+  $(".second-head").children("#replace-sign").click(function(event) {
     $(this)
       .toggleClass("opened")
       .siblings(".link-lists2")
@@ -176,7 +176,7 @@ $(document).ready(function() {
     }
   });
 
-  $(".third-head").click(function(event) {
+  $(".third-head").children("#replace-sign").click(function(event) {
     $(this)
       .toggleClass("opened")
       .siblings(".link-lists3")
@@ -192,7 +192,7 @@ $(document).ready(function() {
         .html("+");
     }
   });
-  $(".first-head").click(function(event) {
+  $(".first-head").children("#replace-sign").click(function(event) {
     $(this).toggleClass("opened");
     $(".link-lists1").slideToggle(300);
     //$(".first-head").html("+");
