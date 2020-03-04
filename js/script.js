@@ -159,49 +159,49 @@ $(document).ready(function() {
     }
   });
   // show hide top header link
-  $(".second-head").children("#replace-sign").click(function(event) {
-    $(this)
+  $(".second-head").children("span").click(function(event) {
+    $(".second-head")
       .toggleClass("opened")
       .siblings(".link-lists2")
       .slideToggle(300);
     //$("#replace-sigin").html("+");
-    if ($(this).hasClass("opened")) {
-      $(this)
+    if ( $(".second-head").hasClass("opened")) {
+      $(".second-head")
         .children("#replace-sigin")
         .html("-");
     } else {
-      $(this)
+      $(".second-head")
         .children("#replace-sigin")
         .html("+");
     }
   });
 
-  $(".third-head").children("#replace-sign").click(function(event) {
-    $(this)
+  $(".third-head").children("span").click(function(event) {
+    $(".third-head")
       .toggleClass("opened")
       .siblings(".link-lists3")
       .slideToggle(300);
     // $("#replace-sigin").html("+");
-    if ($(this).hasClass("opened")) {
-      $(this)
+    if ( $(".third-head").hasClass("opened")) {
+      $(".third-head")
         .children("#replace-sigin")
         .html("-");
     } else {
-      $(this)
+      $(".third-head")
         .children("#replace-sigin")
         .html("+");
     }
   });
-  $(".first-head").children("#replace-sign").click(function(event) {
-    $(this).toggleClass("opened");
+  $(".first-head").children("span").click(function(event) {
+    $(".first-head").toggleClass("opened");
     $(".link-lists1").slideToggle(300);
     //$(".first-head").html("+");
-    if ($(this).hasClass("opened")) {
-      $(this)
+    if ($(".first-head").hasClass("opened")) {
+      $(".first-head")
         .children("#replace-sigin")
         .html("-");
     } else {
-      $(this)
+      $(".first-head")
         .children("#replace-sigin")
         .html("+");
     }
